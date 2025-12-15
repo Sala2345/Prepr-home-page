@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepr | Workforce Development Platform</title>
+    <meta name="description" content="Prepr's workforce development platform offers pre-built labs and instructor-led programs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "system-ui", "sans-serif"],
+              serif: ["Poppins", "Georgia", "serif"],
+            },
+            colors: {
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))",
+              background: "hsl(var(--background))",
+              foreground: "hsl(var(--foreground))",
+              primary: {
+                DEFAULT: "hsl(var(--primary))",
+                foreground: "hsl(var(--primary-foreground))",
+              },
+              secondary: {
+                DEFAULT: "hsl(var(--secondary))",
+                foreground: "hsl(var(--secondary-foreground))",
+              },
+              muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+              },
+              accent: {
+                DEFAULT: "hsl(var(--accent))",
+                foreground: "hsl(var(--accent-foreground))",
+              },
+              card: {
+                DEFAULT: "hsl(var(--card))",
+                foreground: "hsl(var(--card-foreground))",
+              },
+              prepr: {
+                green: "hsl(var(--prepr-green))",
+                "green-light": "hsl(var(--prepr-green-light))",
+                "green-dark": "hsl(var(--prepr-green-dark))",
+                orange: "hsl(var(--prepr-orange))",
+                "orange-light": "hsl(var(--prepr-orange-light))",
+              },
+            },
+            borderRadius: {
+              lg: "var(--radius)",
+              md: "calc(var(--radius) - 2px)",
+              sm: "calc(var(--radius) - 4px)",
+            },
+            keyframes: {
+              scroll: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              slideInRight: {
+                "0%": { opacity: "0", transform: "translateX(20px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+              shake: {
+                "0%, 100%": { transform: "rotate(0deg)" },
+                "25%": { transform: "rotate(1deg)" },
+                "75%": { transform: "rotate(-1deg)" },
+              }
+            },
+            animation: {
+              scroll: "scroll 30s linear infinite",
+              fadeInUp: "fadeInUp 0.6s ease-out forwards",
+              slideInRight: "slideInRight 0.6s ease-out forwards",
+              shake: "shake 0.5s ease-in-out infinite",
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        --background: 120 25% 95%;
+        --foreground: 0 0% 13%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 13%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 13%;
+        --primary: 152 76% 36%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 120 25% 92%;
+        --secondary-foreground: 0 0% 13%;
+        --muted: 120 20% 90%;
+        --muted-foreground: 0 0% 45%;
+        --accent: 30 95% 55%;
+        --accent-foreground: 0 0% 100%;
+        --border: 120 15% 85%;
+        --input: 120 15% 85%;
+        --ring: 152 76% 36%;
+        --radius: 0.5rem;
+        --prepr-green: 152 76% 36%;
+        --prepr-green-light: 120 30% 94%;
+        --prepr-green-dark: 152 76% 28%;
+        --prepr-orange: 30 95% 55%;
+        --prepr-orange-light: 30 95% 65%;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      /* Set global paragraph font size */
+      p {
+        font-size: 24px;
+        line-height: 1.6;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@^3.4.0",
+    "clsx": "https://esm.sh/clsx@^2.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
